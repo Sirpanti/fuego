@@ -1,0 +1,21 @@
+import 'dart:math';
+
+class Circle {
+  double radius;
+
+  Circle(this.radius);
+
+  double calculateArea() {
+    return pi * pow(radius, 2);
+  }
+
+  double calculateCircumference() {
+    return 2 * pi * radius;
+  }
+}
+
+void main() {
+  Circle circle = Circle(10);
+  print("Area: ${circle.calculateArea()}");
+  print("Circumference: ${circle.calculateCircumference()}");
+}
