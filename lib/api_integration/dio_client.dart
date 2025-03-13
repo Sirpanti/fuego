@@ -41,6 +41,7 @@ class DioClient {
     return retrievedUser;
   }
 
+// this method will return list of users
   Future<UserInfoListResponse> getUserList() async {
     Response? userData;
     try {
